@@ -1,4 +1,3 @@
-# Haowen Shi; Problem Set 2
 # >———IMPORTANT NOTE: USE A TERMINAL THAT SUPPORTS 24-BIT COLOUR RENDERING———<
 def zoo_database(): animals = [input(f"Enter animal {i + 1}: ").strip().lower() for i in range(5)]; print("Animals:", animals); [print(f"There {'are' if animals.count(a) > 1 else 'is'} {animals.count(a)} {a}{'s' if animals.count(a) != 1 and not a.endswith('s') else ''}") for a in set(animals)] # Problem 1
 # Puts a for loop in the list for conciseness ->------->------->------->------->^^^^^^^^^^^^^^^^^                                              ^^^^^^^^ Correct are/is checker ^^^^^^^^                        ^^^^^^^^ Checks if there's > 1, if so makes it plural ^^^^^^^^       ^<--- 'a' is an index variable to cycle through the list of animals ('a' also stands for animal); Uses set(animals) to make sure there are no duplicates
